@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 
-
 const Header = ({ titles}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 

@@ -1,10 +1,5 @@
 import Header from "./components/Header";
-
-const headerData = [
-  { title: "This is a Title" },
-  { title: "This is a Second Title" },
-  { title: "This is a Third Title" }
-];
+import headerData from "./data/headerData";
 
 const App = () => {
   return (
