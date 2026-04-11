@@ -18,6 +18,7 @@ const Component = ({ data }) => {
       <div>
         <button 
           className="button"
+          disabled={currentIndex === 0}
           onClick={() => 
           setCurrentIndex(prev => (prev - 1 + data.length) % data.length)
           }
@@ -27,6 +28,7 @@ const Component = ({ data }) => {
 
         <button
           className="button button-spacing"
+          disabled={currentIndex === data.length - 1}
           onClick={() => 
           setCurrentIndex(prev => (prev + 1) % data.length)
           }
